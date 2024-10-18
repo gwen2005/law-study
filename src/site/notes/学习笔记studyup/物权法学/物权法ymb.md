@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/学习笔记studyup/物权法学/物权法ymb/","dgPassFrontmatter":true,"created":"2024-09-20T15:35:41.236+08:00","updated":"2024-10-16T19:22:02.128+08:00"}
+{"dg-publish":true,"permalink":"/学习笔记studyup/物权法学/物权法ymb/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-09-20T15:35:41.236+08:00","updated":"2024-10-16T19:22:02.128+08:00"}
 ---
 
 # 功能
