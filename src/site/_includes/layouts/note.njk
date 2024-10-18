@@ -74,6 +74,9 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {% for imp in dynamics.notes.afterContent %}
         {% include imp %}
       {% endfor %}
+  {% for imp in dynamics.notes.footer %}
+    {% include imp %}
+  {% endfor %}
     </main>
 
     {% if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true or settings.dgShowToc === true%}
@@ -92,5 +95,9 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {% include imp %}
     {% endfor %}
     {%include "components/lucideIcons.njk"%}
+  {% for imp in dynamics.notes.footer %}
+    {% include imp %}
+  {% endfor %}
+  {% include "components/lucideIcons.njk" %}
   </body>
 </html>

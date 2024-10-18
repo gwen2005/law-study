@@ -1,0 +1,34 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>yanziyu.site</title>  
+  <style>  
+    /* 预先定义一个类，用于禁用页面元素 */  
+    .disabled {  
+      pointer-events: none;  
+      opacity: 0.6; /* 可选：降低元素透明度，表示它们被禁用了 */  
+    }  
+  </style>  
+</head>  
+<body>  
+  <script type="text/javascript">  
+    var password = prompt("请输入密码:");  
+    if (password !== "886586") {  
+      // 模拟404页面并禁用页面其他功能  
+      document.body.innerHTML = '<h1>密码输入错误</h1><p>该页面现被锁定，请刷新重试</p>';  
+      // 更改页面标题以反映404状态  
+      document.title = '404 Not Found';  
+      // 禁用页面的其他功能  
+      document.body.classList.add('disabled');  
+    } else {  
+      // 密码正确时的处理逻辑（这里可以添加您需要的操作）  
+      // ...  
+    }  
+  </script>  
+  <!-- 页面的其他内容（如果有的话） -->  
+  <!-- <a href="#">链接</a> -->  
+  <!-- <button>按钮</button> -->  
+</body>  
+</html>
