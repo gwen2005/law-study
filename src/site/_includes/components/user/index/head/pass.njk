@@ -5,44 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>yanziyu.site</title>  
   <style>  
-    body.disabled {  
-      pointer-events: none;  
-      opacity: 0.6;  
-      color: rgba(128, 128, 128, 0.5);  
+    /* 添加一个全屏且禁用的样式 */  
+    body.fullscreen-disabled {  
+      margin: 0;  
+      padding: 0;  
+      height: 100vh;  
+      width: 100vw;  
+      overflow: hidden; /* 防止滚动 */  
+      position: fixed; /* 固定定位 */  
+      top: 0;  
+      left: 0;  
+      background-color: #fff; /* 背景色，可根据需要调整 */  
+      pointer-events: none; /* 禁用交互 */  
+      opacity: 1; /* 可根据需要调整透明度 */  
+      display: flex;  
+      align-items: center;  
+      justify-content: center;  
+      color: rgba(0, 0, 0, 0.7); /* 文字颜色，可根据需要调整 */  
+      font-family: Arial, sans-serif;  
     }  
-    body.disabled * {  
-      color: rgba(128, 128, 128, 0.5);  
-      cursor: default;  
+  
+    /* 错误页面的内容样式 */  
+    .error-page {  
+      text-align: center;  
+      padding: 20px;  
+      box-sizing: border-box;  
     }  
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh; /* 使 body 高度铺满屏幕 */
-      display: flex;
-      align-items: flex-start; /* 内容从顶部开始 */
-      justify-content: center; /* 水平居中 */
-    }
-    article {
-      width: 100%; /* 使内容宽度铺满 */
-      height: 100%; /* 使内容高度铺满 */
-      padding: 20px;
-      box-sizing: border-box; /* 包括内边距在内 */
-      overflow-y: auto; /* 允许垂直滚动 */
-    }
   </style>  
 </head>  
 <body>  
   <script type="text/javascript">  
     var password = prompt("请输入密码:");  
     if (password !== "111") {  
-      document.body.innerHTML = '<h1>密码错误</h1><p>请找管理员</p>';  
-      document.title = '404 Not Found';  
-      document.body.classList.add('disabled');  
-
+      // 密码错误时跳转到错误页面，并附带一个参数表示需要禁用交互  
+      window.location.href = "https://yanziyu.site/%E8%BF%90%E8%A1%8C%E6%9D%82/%E4%B8%BB%E9%A1%B5home/%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%E5%95%A6%E2%9D%8C/?disabled=true";  
     } else {  
-      // 密码正确时跳转  
-      window.location.href = "https://yanziyu.site/%E8%BF%90%E8%A1%8C%E6%9D%82/%E4%B8%BB%E9%A1%B5home/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4%F0%9F%98%B8/";  
+      // 密码正确时不做任何动作  
     }  
   </script>  
 </body>  
