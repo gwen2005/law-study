@@ -3,25 +3,30 @@
 <head>  
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>{{ title | default('yanziyu.site') }}</title>  
-  <style>  
-    .disabled {  
-      pointer-events: none;  
-      opacity: 0.6;  
-    }  
-  </style>  
+  <title>特定笔记的密码验证</title>  
 </head>  
 <body>  
   <script type="text/javascript">  
-    var password = prompt("请输入密码:");  
-    if (password !== "密码") {  
-      document.body.innerHTML = '<h1>密码输入错误</h1><p>该页面现被锁定，请刷新重试</p>';  
-      document.title = '404 Not Found';  
-      document.body.classList.add('disabled');  
-    } else {  
-      // 密码正确时的处理逻辑  
+    // 假设您的特定笔记页面的URL包含"/special-note"  
+    var currentPath = window.location.pathname;  
+    if (currentPath.includes("/special-note")) {  
+      var password = prompt("请输入查看此笔记的密码:");  
+      if (password !== "密码") {  
+        // 密码不正确，可以显示错误消息或重定向到其他页面  
+        alert("密码错误，无法查看此笔记。");  
+        // 可选：重定向到404页面或其他错误页面  
+        // window.location.href = "/404.html";  
+        // 或者简单地更改页面内容以模拟404  
+        document.body.innerHTML = '<h1>密码错误</h1><p>您没有权限查看此笔记。</p>';  
+      } else {  
+        // 密码正确，显示笔记内容（这里可以是动态加载的内容）  
+        // ...  
+      }  
     }  
+    // 如果不是特定笔记页面，则正常显示页面内容  
   </script>  
+    
+  <!-- 页面的其他内容 -->  
+  <!-- 对于需要密码验证的笔记，这里的内容应该在密码验证成功后动态加载或显示 -->  
 </body>  
 </html>
-
