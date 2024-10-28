@@ -1,5 +1,5 @@
 ---
-{"文件类别":"学习笔记","tags":["总和"],"dg-publish":true,"permalink":"/学习笔记studyup/民法总论/民总coco/","dgPassFrontmatter":true,"created":"2024-06-28T14:29:10.587+08:00","updated":"2024-10-11T15:10:34.336+08:00"}
+{"文件类别":"学习笔记","tags":["总和"],"dg-publish":true,"permalink":"/学习笔记studyup/民法总论/民总coco/","dgPassFrontmatter":true,"created":"2024-06-28T14:29:10.587+08:00","updated":"2024-10-26T18:39:32.742+08:00"}
 ---
 
 [[思维导图mind/民法体系coco思维导图\|民法体系coco思维导图]]
@@ -14,7 +14,7 @@
 	- [[总则\|总则]]
 	- [[学习笔记studyup/知识点cheese/债法\|债法]]
 	- [[学习笔记studyup/知识点cheese/物权\|物权]]
-	- [[学习笔记studyup/知识点cheese/亲属（婚姻家庭法）\|亲属（婚姻家庭法）]]
+	- [[学习笔记studyup/知识点cheese/亲属法\|亲属法]]
 	- [[学习笔记studyup/知识点cheese/继承法\|继承法]]
 - 特殊民法
 ## 民法的调整对象 
